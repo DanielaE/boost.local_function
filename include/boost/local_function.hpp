@@ -10,6 +10,17 @@
 
 #ifndef DOXYGEN
 
+#if defined(_MSC_VER)
+#pragma warning(push)
+#pragma warning(disable: 4003) // not enough actual parameters for macro
+#pragma warning(disable: 4100) // unreferenced formal parameter
+#pragma warning(disable: 4101) // unreferenced local variable
+#pragma warning(disable: 4102) // unreferenced label
+#pragma warning(disable: 4510) // default constructor could not be generated
+#pragma warning(disable: 4512) // assignment operator could not be generated
+#pragma warning(disable: 4610) // type can never be instantiated - user defined constructor required
+#endif
+
 #include <boost/local_function/aux_/macro/decl.hpp>
 #include <boost/local_function/aux_/macro/name.hpp>
 #include <boost/local_function/aux_/macro/typeof.hpp>
@@ -452,6 +463,10 @@ number of times Boost.Typeof is used to deduce types (see the
 @RefMacro{BOOST_LOCAL_FUNCTION}.
 */
 #define BOOST_LOCAL_FUNCTION_TYPEOF(bound_variable_name)
+
+#if defined(_MSC_VER)
+#pragma warning(pop)
+#endif
 
 #endif // DOXYGEN
 
