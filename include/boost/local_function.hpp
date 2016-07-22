@@ -16,6 +16,8 @@
 #pragma warning(disable: 4100) // unreferenced formal parameter
 #pragma warning(disable: 4101) // unreferenced local variable
 #pragma warning(disable: 4102) // unreferenced label
+#pragma warning(disable: 4458) // declaration of 'boost_local_function_auxXargsX' hides class member
+#pragma warning(disable: 4459) // declaration of 'boost_local_function_auxXargsX' hides global declaration
 #pragma warning(disable: 4510) // default constructor could not be generated
 #pragma warning(disable: 4512) // assignment operator could not be generated
 #pragma warning(disable: 4610) // type can never be instantiated - user defined constructor required
